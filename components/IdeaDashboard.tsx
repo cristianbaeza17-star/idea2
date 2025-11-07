@@ -1,3 +1,4 @@
+'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { supabase } from '../services/supabase';
@@ -40,7 +41,7 @@ const IdeaDashboard: React.FC<IdeaDashboardProps> = ({ session }) => {
       setLoading(false);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [session.user.id]);
 
   useEffect(() => {
     getIdeas();
