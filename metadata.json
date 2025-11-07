@@ -1,0 +1,5 @@
+{
+  "name": "Supabase Idea Box",
+  "description": "A secure application to log in and save your ideas for future reference, built with Supabase and React.",
+  "requestFramePermissions": []
+}
